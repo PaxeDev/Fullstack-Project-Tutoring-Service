@@ -1,0 +1,10 @@
+# Ignore any files or directories named "temp" in any path
+temp/
+
+# Ignore specific files by path
+ajaxTest.php
+frontend/HTML/ajaxTest.php
+login/fileUpload.php
+components/dbconnection.php
+components/fileUpload.php
+components/headers.php
