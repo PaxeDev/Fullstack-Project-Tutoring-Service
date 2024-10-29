@@ -8,8 +8,7 @@ Technologies and Tools
     Backend: PHP
     Database: MySQL
     Frontend: JavaScript (AJAX) and CSS
-    Frameworks: Bootstrap for styling and Font Awesome for some icons
-
+    
 Installation and Setup
 
 To replicate the project, users will need to create their own files:
