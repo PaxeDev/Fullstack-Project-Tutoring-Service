@@ -29,15 +29,19 @@ Key Features
 Live Project
 
 The project is hosted on my domain, where you can see it in action. [Insert your domain URL here]
+
 Contributions
 
 This project is closed to collaborations, as it was completed in 10 days for the course I attended.
+
 License
 
 This project is personal and intended for demonstration and learning purposes only.
+
 Author
 
 This project was completed in 10 days as a final project for the backend web development course at CodeFactory Wien. Bootstrap and Font Awesome were used.
+
 Support and Contact
 
 If you have any questions or comments about the project, please leave them directly on GitHub.
