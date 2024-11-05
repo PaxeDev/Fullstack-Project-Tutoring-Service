@@ -14,7 +14,7 @@ Installation and Setup
 To replicate the project, users will need to create their own files:
 
     fileUpload.php (for registration and profile changes)
-    dbconnection.php (which includes the database connection and the CRUD class in OOP)
+    dbconnection.php (which includes the database connection and the CRUD class)
     headers.php (for AJAX functionality)
 
 Basic Usage
@@ -24,11 +24,7 @@ Key Features
 
     Admin: Full control over user profiles, allowing editing and deletion. Also manages tutoring offers: create, modify, delete, and view.
     Users: Can filter tutoring sessions by subject, access a list of available sessions, and leave ratings for tutoring sessions after they are completed.
-
-Live Project
-
-The project is hosted on my domain, where you can see it in action. [Insert your domain URL here]
-
+    
 Contributions
 
 This project is closed to collaborations, as it was completed in 10 days for the course I attended.
