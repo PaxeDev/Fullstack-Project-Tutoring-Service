@@ -20,7 +20,6 @@ $university = $obj->read("", "universities");
 if ($_SESSION["role"] == "trainer") {
     $trainer_id = $_SESSION["user_id"];
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

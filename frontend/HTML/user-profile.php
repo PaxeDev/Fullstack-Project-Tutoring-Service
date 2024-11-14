@@ -43,7 +43,7 @@ $userRole = isset($_SESSION['role']) ? $_SESSION['role'] : null;
                                     <h5 class="text-center mb-1" id="fullname"></h5>
                                     <p class="text-center text-secondary mb-4" id="userRole"></p>
                                     <p class="text-center">
-                                        <a class="btn btn-primary" href="/frontend/HTML/edit_profile.php" role="button">Edit Profile</a>
+                                        <a class="btn btn-primary" href="edit_profile.php" role="button">Edit Profile</a>
                                     </p>
                                 </div>
                             </div>

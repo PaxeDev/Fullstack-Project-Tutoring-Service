@@ -28,7 +28,7 @@ function loadUserProfile() {
       document.getElementById("lname").textContent = user.lastname;
       document.getElementById(
         "side-image"
-      ).innerHTML = `<img src='/components/pictures/${user.picture}' class='img-fluid rounded-circle' alt='${user.firstname} ${user.lastname}' />`;
+      ).innerHTML = `<img src='../components/pictures/${user.picture}' class='img-fluid rounded-circle' alt='${user.firstname} ${user.lastname}' />`;
       document.getElementById("userEmail").textContent = user.email;
       document.getElementById("userRole").textContent = user.role;
       document.getElementById("description").textContent = user.description;
@@ -55,19 +55,15 @@ function loadUserReviews() {
         <div class="card">
           <div class="card-body py-4 mt-2">
             <div class="d-flex justify-content-center mb-4">
-              <img src="../../components/pictures/${
-                review.picture
-              }" class="rounded-circle shadow-1-strong" width="100" height="100"/>
+              <img src="../../components/pictures/${review.picture
+          }" class="rounded-circle shadow-1-strong" width="100" height="100"/>
             </div>
-            <h4 class="font-weight-bold">${review.firstname} ${
-          review.lastname
-        }</h4>
-            <h5 class="font-weight-bold my-3">${
-              review.rating
-            } - ${getRatingText(review.rating)}</h5>
-            <p class="mb-2 font-weight-bold">${review.title} | ${
-          review.subject
-        }</p>
+            <h4 class="font-weight-bold">${review.firstname} ${review.lastname
+          }</h4>
+            <h5 class="font-weight-bold my-3">${review.rating
+          } - ${getRatingText(review.rating)}</h5>
+            <p class="mb-2 font-weight-bold">${review.title} | ${review.subject
+          }</p>
             <p class="mb-2">
               <i class="fa-solid fa-quote-left" style="color: #a9b1b9"></i>
               <span id="comment-${review.id}">${review.comment}</span>
@@ -76,12 +72,10 @@ function loadUserReviews() {
               <!-- Buttons for Edit and Delete -->
             <div class="d-flex justify-content-end mt-4">
              <div class="d-flex justify-content-between mt-3">
-              <button type="button" class="btn btn-primary me-2" onclick="editReview(${
-                review.id
-              })">Edit</button>   
-              <button type="button" class="btn btn-danger" onclick="deleteReview(${
-                review.id
-              })")>Delete</button>
+              <button type="button" class="btn btn-primary me-2" onclick="editReview(${review.id
+          })">Edit</button>   
+              <button type="button" class="btn btn-danger" onclick="deleteReview(${review.id
+          })")>Delete</button>
             </div>
           </div>
         </div>`;
@@ -131,33 +125,29 @@ function loadUserBookings() {
               <div class="card">
                 <div class="card-body py-4 mt-2">
                   <h4 class="font-weight-bold">${booking.subject_name}</h4>
-                  <p><strong>Trainer:</strong> ${booking.trainer_firstname} ${
-          booking.trainer_lastname
-        }</p>
+                  <p><strong>Trainer:</strong> ${booking.trainer_firstname} ${booking.trainer_lastname
+          }</p>
                   <p><strong>Price:</strong> ${booking.price}</p>
                   <p><strong>Capacity:</strong> ${booking.capacity}</p>
                   <p><strong>Date:</strong> ${new Date(
-                    booking.date_from
-                  ).toLocaleString()} - ${new Date(
-          booking.date_to
-        ).toLocaleString()}</p>
+            booking.date_from
+          ).toLocaleString()} - ${new Date(
+            booking.date_to
+          ).toLocaleString()}</p>
                   <p><strong>Booking Date:</strong> ${new Date(
-                    booking.booking_date
-                  ).toLocaleString()}</p>
+            booking.booking_date
+          ).toLocaleString()}</p>
                   <div class="d-flex justify-content-between mt-3">
                     ${buttonHTML}
                   </div>
-                  <div class="collapse mt-3" id="reviewForm-${
-                    booking.booking_id
-                  }">
+                  <div class="collapse mt-3" id="reviewForm-${booking.booking_id
+          }">
                     <div class="card card-body">
                       <div class="mb-3">
-                        <label for="reviewRating-${
-                          booking.booking_id
-                        }" class="form-label">Rating</label>
-                        <select class="form-select" id="reviewRating-${
-                          booking.booking_id
-                        }" required>
+                        <label for="reviewRating-${booking.booking_id
+          }" class="form-label">Rating</label>
+                        <select class="form-select" id="reviewRating-${booking.booking_id
+          }" required>
                           <option value="5">5 - Excellent</option>
                           <option value="4">4 - Very Good</option>
                           <option value="3">3 - Good</option>
@@ -166,18 +156,14 @@ function loadUserBookings() {
                         </select>
                       </div>
                       <div class="mb-3">
-                        <label for="reviewComment-${
-                          booking.booking_id
-                        }" class="form-label">Comment</label>
-                        <textarea class="form-control" id="reviewComment-${
-                          booking.booking_id
-                        }" rows="3" required></textarea>
+                        <label for="reviewComment-${booking.booking_id
+          }" class="form-label">Comment</label>
+                        <textarea class="form-control" id="reviewComment-${booking.booking_id
+          }" rows="3" required></textarea>
                       </div>
-                      <button class="btn btn-primary" onclick="submitReview(${
-                        booking.booking_id
-                      }, ${
-          booking.tutoring_service_id
-        },)">Submit Review</button>
+                      <button class="btn btn-primary" onclick="submitReview(${booking.booking_id
+          }, ${booking.tutoring_service_id
+          },)">Submit Review</button>
                     </div>
                   </div>
                 </div>
